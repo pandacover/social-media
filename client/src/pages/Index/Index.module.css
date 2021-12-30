@@ -1,0 +1,46 @@
+.container > .text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--text-outline);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: url("../../images/coffee_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.container > div > button {
+    margin: 10px;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.container > div > button:first-of-type {
+    padding: 8px 22px;
+}
+
+
+/* container flex */
+
+.container {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* hover effect */
+
+.container > div > button:first-of-type:hover {
+    --text-primary: #fff;
+    --btn-primary: transparent;
+    border: 1px solid var(--text-primary);
+}
+
+.container > div > button:last-of-type:hover {
+    --text-outline: #000;
+    --btn-outline: #fff;
+    border: 1px solid transparent;
+}

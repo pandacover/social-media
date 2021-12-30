@@ -1,0 +1,49 @@
+/* Navigation bar style */
+
+.navbar {
+    height: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--navbar);
+}
+
+.container1 {
+    flex: 1.5;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 > .name {
+    font-size: 16px;
+    color: var(--text-outline);
+}
+
+.container2 {
+    flex: 1;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+}
+
+.container2 > div:first-of-type > button {
+    padding: 8px 22px;
+}
+
+/* Hover effects */
+
+.container2 > div > button {
+    transition: all 300ms ease-in 0s;
+}
+
+.container2 > div:first-of-type > button:hover {
+    --text-primary: #fff;
+    --btn-primary: transparent;
+    border: 1px solid var(--text-primary);
+}
+
+.container2 > div:last-of-type > button:hover {
+    --text-outline: #000;
+    --btn-outline: #fff;
+    border: 1px solid transparent;
+}

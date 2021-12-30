@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+:root {
+    --btn-primary: #fff;
+    --btn-outline: transparent;
+
+    --text-primary: #000;
+    --text-outline: #fff;
+
+    --navbar: #282c34;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+* { 
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: 600;
+    font-family: monospace; 
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+}
